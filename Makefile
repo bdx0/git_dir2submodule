@@ -22,7 +22,7 @@ git-create:
 		"origin" ) git remote remove origin; \
 	esac 
 	git remote add origin https://github.com/duongbaoduy/git_dir2submodule.git
-	git config --global credential.helper cache
+	git config --global credential.helper store
 	@echo Done $@ : $^ !!
 
 .PHONY: git-pub
